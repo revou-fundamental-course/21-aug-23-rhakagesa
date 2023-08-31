@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+  <body>
+    <!-- Container Start -->
+    <div class="container">
+      <!-- Header Start -->
+      <header>
+        <!-- Link Logo Start -->
+        <section class="homelogo">
+          <a href="../index.html"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbnChgy7Bt26ORf4AF1Pdei9rqmjJsFdjDfIDe8yy2ew&s"
+              alt="homelogo"
+          /></a>
+        </section>
+        <!-- Link Logo End -->
+
+        <!-- Hamburger Menu Start -->
+        <div class="hamburger-menu">
+          <div class="hamburger-list"></div>
+          <div class="hamburger-list"></div>
+          <div class="hamburger-list"></div>
+        </div>
+        <!-- Hamburger Menu End -->
+
+        <!-- Nav Start -->
+        <nav class="nav">
+          <ul>
+            <li class="home"><a href="../index.html">Home</a></li>
+            <li class="profile"><a href="#">Our Profile</a></li>
+            <li class="achievement">
+              <a href="../index.html#fasilitas">Facilitaties</a>
+            </li>
+            <li class="message">
+              <a href="#pesan">Message Us</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav End -->
+      </header>
+      <!-- Header End -->
+
+      <!-- Main Start -->
+      <main>
+        <!-- Banner Start -->
+        <section class="banner">
+          <div class="welcome-text">
+            <h1>Tentang Kami</h1>
+            <p>
+              Sekolah Koding adalah suatu platform pembelajaran daring yang
+              bertujuan untuk mengajarkan pemrograman komputer secara interaktif
+              dan terstruktur.
+            </p>
+          </div>
+          <div class="image-list">
+            <div class="visi-text">
+              <h1>Visi Kami</h1>
+              <p>
+                Menjadi sumber daya utama global untuk pendidikan pemrograman
+                dan teknologi, mendorong masyarakat agar mampu beradaptasi dan
+                berinovasi dalam era digital.
+              </p>
+            </div>
+            <img
+              src="../asset/gambar2.jpeg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+            <div class="misi-text">
+              <h1>Misi Kami</h1>
+              <p>
+                Memberikan pendidikan pemrograman yang berkualitas tinggi dan
+                mudah diakses kepada semua kalangan, dari pemula hingga tingkat
+                lanjutan.
+              </p>
+            </div>
+            <img src="../asset/gambar1.jpg" alt="" width="100%" height="100%" />
+            <img src="../asset/gambar3.jpg" alt="" width="100%" height="100%" />
+          </div>
+        </section>
+        <!-- Banner End -->
+
+        <!-- Message Form Start -->
+        <section id="pesan">
+          <h1 class="messageus">Message Us</h1>
+          <!-- Input Form Start -->
+          <div class="messageform">
+            <div class="forminput">
+              <form id="form">
+                <div class="box">
+                  <label for="name" class="w25">Nama</label>
+                  <span>: </span>
+                  <input type="text" name="name" id="name" class="w75" />
+                </div>
+                <div class="box">
+                  <label for="date" class="w25">Tanggal Lahir</label>
+                  <span>: </span>
+                  <input type="date" name="date" id="date" class="w75" />
+                </div>
+                <div class="box">
+                  <label for="gender" class="w25">Jenis Kelamin</label>
+                  <span>: </span>
+                  <div class="w75">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="man"
+                      value="Laki - laki"
+                    />
+                    <label for="man">Laki - laki</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="woman"
+                      value="Perempuan"
+                    />
+                    <label for="woman">Perempuan</label>
+                  </div>
+                </div>
+                <div class="box" id="boxmsg">
+                  <label for="msgbox" class="w25">Pesan</label>
+                  <span>: </span>
+                  <textarea
+                    name="msgbox"
+                    id="msgbox"
+                    cols="30"
+                    rows="10"
+                    placeholder="Pesan"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="submit"
+                  id="submit"
+                  onclick="validateForm()"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            <!-- Input Form End -->
+
+            <!-- Value Form Start -->
+            <div id="value">
+              <p id="valueform">
+                Current time<span id="current_time"></span><br /><br />
+                Nama<span id="display-name"></span><br />
+                Tanggal Lahir<span id="display-date"></span><br />
+                Jenis Kelamin<span id="display-gender"></span><br />
+                Pesan<span id="display-msg"></span>
+              </p>
+            </div>
+            <!-- Value Form End -->
+          </div>
+        </section>
+        <!-- Message Form End -->
+      </main>
+      <!-- Main End -->
+
+      <!-- Footer Start -->
+      <section>
+        <div class="footer"><h5>Created by RevoU</h5></div>
+      </section>
+      <!-- Footer End -->
+    </div>
+    <!-- Container End -->
+  </body>
+  <script src="../script/profile.js"></script>
+</html>
